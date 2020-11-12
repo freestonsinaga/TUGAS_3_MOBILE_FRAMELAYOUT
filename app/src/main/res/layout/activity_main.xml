@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="FRAME LAYOUT!"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/pink" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:text="Button"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
